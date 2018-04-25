@@ -1,0 +1,58 @@
+--- 
+Mongoconfig: 
+    db_name: 
+    host: "192.168.1.7"
+    password: 
+    port: 
+    username: 
+Rabbitmq: 
+    host: "192.168.1.7"
+    port:
+    user: test
+    password: test
+    queue: 
+    routing_key: 
+    exchange: 
+    frame_max: 
+    heartbeat: 
+    channel :
+    channel_max: 
+    ssl: 
+    ssl_cacert: 
+    ssl_verify_host: 
+    timeout: 
+    vhost: 
+    exchange_conf: 
+        options: 
+            auto_delete:
+            durable:
+            exchange_type: 
+            passive:
+    publish_conf: 
+        options:
+            force_utf8_in_header_strings: 
+            immediate:
+            mandatory:
+        properties:
+            content_type:
+            content_encoding:
+            correlation_id:
+            reply_to:
+            expiration:
+            message_id:
+            type:
+            user_id:
+            app_id:
+            delivery_mode:
+            priority:
+            timestamp:
+            headers:
+    queue_conf:
+        options: 
+            auto_delete:
+            durable:
+            exclusive: 
+            passive: 
+api: 
+    client_id: "dj0yJmk9dWx4ZTJ1S3JmN1ZGJmQ9WVdrOVRVUnJibFJ6TkdVbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1iYw- --"
+    client_secret: 92e77323e4011631e51f28700f826312760214db
