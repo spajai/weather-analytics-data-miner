@@ -25,7 +25,7 @@ sudo apt install mtools
 `rabbitmq-plugins enable rabbitmq_management`
 
 
-#logger
+* logger
 
 `PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t`
 
@@ -45,13 +45,14 @@ Set permission to newly created user
 
 rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
 ```
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- 
+
+```
 Client ID (Consumer Key) FROM RMQ
 XXXXXXXXXX--
 Client Secret (Consumer Secret)
 YYYYYYYYYYYYYYY
+```
 
 
-Add these config to Conf.pm modify and start
-pull data using Perl script
+* Add these config to Conf.pm modify and start
+* pull data using Perl script
