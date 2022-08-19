@@ -54,5 +54,5 @@ Rabbitmq:
             exclusive: 
             passive: 
 api: 
-    client_id: "dj0yJmk9dWx4ZTJ1S3JmN1ZGJmQ9WVdrOVRVUnJibFJ6TkdVbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1iYw- --"
-    client_secret: 92e77323e4011631e51f28700f826312760214db
+    client_id: "SOME- --"
+    client_secret: XYZ
