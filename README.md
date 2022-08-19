@@ -13,7 +13,7 @@ Net::RabbitFoot
 NET::AMQ
 XML::LibXML
 ```
-mongo db and rabbitmq conf ip 0.0.0.0
+`mongo db and rabbitmq conf ip 0.0.0.0`
 
 ```
 sudo apt install x86_64-linux-gnu-gcc
@@ -22,22 +22,19 @@ xml2
 libxml2
 sudo apt install mtools    
 ```
-rabbitmq-plugins enable rabbitmq_management
-
-+++++++++++++++++++++++++++++++++++++
-logger
-+++++++++++++++++++++++++++++++++++++
-PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+`rabbitmq-plugins enable rabbitmq_management`
 
 
-++++++++++++++++++++++++++++++++++++++++++
+#logger
 
+`PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t`
+
+
+```
 cpan shell
 reload
 upgrade
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-http://192.168.1.11:15672/#/users
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Add a new/fresh user, say user ‘test’ and password ‘test’
 
 rabbitmqctl add_user test test
@@ -47,6 +44,7 @@ rabbitmqctl set_user_tags test administrator
 Set permission to newly created user
 
 rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
+```
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  
 Client ID (Consumer Key) FROM RMQ
