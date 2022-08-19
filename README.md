@@ -1,5 +1,6 @@
 Prerequisite: - 
 
+```
 Perl,
 RabbitMq
 MongoDb,
@@ -9,17 +10,18 @@ cpan
 Moose
 Net::RabbitFoot
     
-NET::AMQ<<<<<<<<<<<<<   
+NET::AMQ
 XML::LibXML
+```
 mongo db and rabbitmq conf ip 0.0.0.0
 
+```
 sudo apt install x86_64-linux-gnu-gcc
-sudo apt install libxml2-dev
-  icu-devtools libicu-dev libstdc++-5-dev libxml2-dev
+sudo apt install libxml2-dev icu-devtools libicu-dev libstdc++-5-dev libxml2-dev
 xml2
 libxml2
 sudo apt install mtools    
-
+```
 rabbitmq-plugins enable rabbitmq_management
 
 +++++++++++++++++++++++++++++++++++++
@@ -46,8 +48,12 @@ Set permission to newly created user
 
 rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Client ID (Consumer Key)
-dj0yJmk9dWx4ZTJ1S3JmN1ZGJmQ9WVdrOVRVUnJibFJ6TkdVbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1iYw--
+ 
+Client ID (Consumer Key) FROM RMQ
+XXXXXXXXXX--
 Client Secret (Consumer Secret)
-92e77323e4011631e51f28700f826312760214db
+YYYYYYYYYYYYYYY
+
+
+Add these config to Conf.pm modify and start
+pull data using Perl script
